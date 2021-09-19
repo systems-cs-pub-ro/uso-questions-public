@@ -25,8 +25,8 @@ You can learn how from the free series [How to Contribute to an Open Source Proj
 
 Preparatory phases:
 
-1. Create a fork of [this repository](https://github.com/systems-cs-pub-ro/uso-questions-private/).
-1. Clone your fork locally or update your local clone with [the upstream repository](https://github.com/systems-cs-pub-ro/uso-questions-private/) updates.
+1. Create a fork of this repository.
+1. Clone your fork locally or update your local clone with the upstream repository updates.
 
 Adding new questions:
 
