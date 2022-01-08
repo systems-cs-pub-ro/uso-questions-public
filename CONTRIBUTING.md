@@ -6,6 +6,16 @@ The following is a set of guidelines for contributing to questions for the USO (
 These are mostly guidelines, not rules.
 Use your best judgment, and feel free to propose changes to this document in a pull request.
 
+## Table of contents
+- [Pull Requests](#pull-requests)
+- [Contributing Steps](#contributing-steps)
+- [Question Format](#question-format)
+- [Style Guides](#style-guides)
+- [Creating questions as a contributor](#creating-questions-as-a-contributor)
+- [Creating questions as a team member](#creating-questions-as-a-team-member)
+- [Attribution](#attribution)
+
+
 ## Pull Requests
 
 The process described here has several goals:
@@ -92,6 +102,28 @@ USO questions may fall under one of the categories:
 [Sign-off](https://docs.pi-hole.net/guides/github/how-to-signoff/) your commits.
 
 Take a look in [these guidelines](https://gist.github.com/robertpainsi/b632364184e70900af4ab688decf6f53) for your Git commit messages.
+
+## Creating questions as a contributor
+
+<b>Starting</b>: a contributor (non-team-member person) wants to add a question
+
+<b>Workflow</b>:
+* The contributor formulates the idea of the question
+* The contributor writes the question in the public format and follows the contributing guideline for a smooth process
+* The contributor creates a contribution PR in the public pool repo
+
+<b>Result</b>: A contribution question added in the public pool repo
+
+## Creating questions as a team member
+
+<b>Starting</b>: a team member wants to add a question
+
+<b>Workflow</b>:
+* The member formulates the idea of the question
+* The member writes the question in the public format and follows the contributing guideline for a smooth process
+* The member creates a contribution PR in the private pool repo
+
+<b>Result</b>: A contribution question added in the private pool repo
 
 ## Attribution
 
