@@ -1,0 +1,26 @@
+name: HR Syntax Check
+on: [pull_request]
+jobs:
+  syntax_checker:
+    name: Human Readable Syntax Checker
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Checkout systems-cs-pub-ro/quiz-manager
+      uses: actions/checkout@v3
+      with:
+        repository: systems-cs-pub-ro/quiz-manager
+        token: ${{ secrets.GITHUB_TOKEN }}
+        path: quiz-manager
+    - id: files
+      uses: jitterbit/get-changed-files@v1
+      continue-on-error: true
+      with:
+        format: 'csv'
+    - run: |
+        mapfile -d ',' -t added_modified_files < <(printf '%s,' '${{ steps.files.outputs.added_modified }}')
+        code=0
+        for added_modified_file in "${added_modified_files[@]}"; do
+          python3 quiz-manager/src/quiz_manager.py check -t common -i ${added_modified_file} || ((code=code+1))
+        done
+        exit $code
